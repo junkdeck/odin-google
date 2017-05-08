@@ -1,3 +1,5 @@
+::selection{background: transparent}::-moz-selection{background:transparent}
+
 *{
 	margin:0;
 	padding:0;
@@ -6,6 +8,11 @@ html,body{
 	height:100%;
 
     font-family: arial, sans-serif;
+
+	background:url(http://vignette2.wikia.nocookie.net/universe-of-smash-bros-lawl/images/a/a3/Guy_Fieri.png/revision/latest?cb=20160128070849);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #wrapper{
@@ -17,6 +24,8 @@ html,body{
 
     width:100%;
     height:100%;
+
+	background:rgba(255,255,255,0.95);
 }
 
 .search{
@@ -82,7 +91,7 @@ html,body{
 	letter-spacing: 0px;
 
 	border-radius:2px;
-	border: 1px solid #fff;
+	border: 1px solid transparent;
 
 	color: #777;
 	background: #f2f2f2;
@@ -117,18 +126,21 @@ html,body{
     border-color:#dedede;
     border-radius:2px;
 
-    box-shadow: 0 1px 0 0 #bcbcbc,
-    0 2px 2px #ddd;
+    box-shadow: 0 1px 0 0 #c2c2c2,
+    0 2px 2px #dfdfdf;
 
     transition: 100ms ease-out;
 }
 
 .search-bar-input:focus, .search-bar-input:hover{
-    box-shadow: 0 1px 0 0 #bcbcbc,
-	0 3px 7px 0 #ddd;
+    box-shadow: 0 1px 0 0 #c2c2c2,
+	0 3px 7px 0 #dfdfdf;
 }
 
 .footer{
+	display:flex;
+	flex-direction: row;
+
     background:#f2f2f2;
     border-top: 1px solid #dfdfdf;
     width:100%;
@@ -140,12 +152,19 @@ html,body{
 }
 
 .left-content{
+	justify-content: flex-start;
+}
+
+.right-content{
+	justify-content: flex-end;
+	margin-right: 30px;
+}
+
+.foot-content{
 	height:100%;
 	width:50%;
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
-
 }
 
 .foot-link{
