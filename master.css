@@ -232,3 +232,7 @@ html,body{
 	background-size: 528px 68px;
 	background-position: -132px -38px;
 }
+
+.grid-menu:hover{
+	opacity:0.85;
+}
