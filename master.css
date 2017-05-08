@@ -96,14 +96,14 @@ html,body{
 
 	cursor:pointer; cursor:hand;
 }
-.btn:hover{
+.btn-search:hover{
 	border: 1px solid #bcbcbc;
 	color: #333;
 	background: #f8f8f8;
 
 	box-shadow: 0 1px 2px #bcbcbc;
 }
-.btn:active{
+.btn-search:active{
 	border: 1px solid #7da7e6;
 }
 
@@ -119,6 +119,13 @@ html,body{
 
 	color: #fff !important;
 	background: #3e89df;
+}
+
+.btn-signin:hover{
+	text-decoration: none !important;
+}
+.btn-signin:active{
+	background: #2569b6;
 }
 
 .search-bar-input{
